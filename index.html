@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam for 4-month</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1 class="visibility-hidden">Exam for 4-month</h1>
+    
+    
+    <div class="users-col users">
+
+        <template id="users_data_template">
+            <div class="users__all-data data">
+                <div class="data__company company">
+                    <h2 class="company__name"></h2>
+                    <p class="company__catchPhrase"></p>
+                    <p class="company__bs"></p>
+                </div>
+    
+    
+                <div class="data__users-data data">
+                    <span class="data__userId"></span>
+                    <h2 class="data__userName"></h2>
+                    <h3 class="data__name"></h3>
+    
+                    <div class="data__address address">
+                        <h3 class="address__city"></h3>
+                        <h4  class="address__street"></h4>
+                        <p class="address__suite"></p>
+                        <p class="address__zipcode"></p>
+                        <button class="read-posts"><i class="bi bi-chat-left-text"> Read posts</i></button>
+                    </div>
+                </div>
+    
+    
+                <div class="data__links links">
+                    <a target="_blank" href="" class="data__location"><i class="bi bi-geo-alt"><br>Location</i></a>
+                    <a class="data__email" href="" target="_blank"><i class="bi bi-envelope"><br></i>Email</i></a>
+                    <a class="data__website" href="" target="_blank"><i class="bi bi-globe"><br>Website</i></a>
+                    <a class="data__phone" href="" target="_blank"><i class="bi bi-telephone"><br>Phone</i></a>
+                </div>
+            </div>
+    
+    
+        </template>
+    </div>
+
+    <div class="posts-col post">
+        <template id="posts__data__template">
+            <div class="post__texts text">
+                <h3 class="text__title"></h3>
+                <p class="text__body"></p>
+            </div>
+        </template>
+        
+    </div>
+
+    <div class="comment-col comment">
+        <template id="comment__data__template">
+            <div class="comment__texts text">
+                <h3 class="text__title"></h3>
+                <p class="text__body"></p>
+                <a class="text__email" href="" target="_blank"><i class="bi bi-envelope"><br></i>Email</i></a>
+            </div>
+        </template>
+        
+    </div>
+
+
+
+
+
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
