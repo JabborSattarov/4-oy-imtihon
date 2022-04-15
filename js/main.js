@@ -8,7 +8,10 @@ const listComments = document.querySelector(".comment-col");
 
 
 function renderUsers(data, list){
-
+    if(!list.innerHTML == ""){
+        const loader = document.querySelector(".loader-overlay");
+        loader.style.display = "none"
+    }
     const fragment = document.createDocumentFragment()
     data.forEach(user => {
         const clone = templateUser.cloneNode(true);
@@ -67,8 +70,10 @@ function renderUsers(data, list){
 }
 
 
+
 (
     async function () {
+        
         try{
             const res = await fetch(`https://jsonplaceholder.typicode.com/users`);
             const data = await res.json();
@@ -82,8 +87,7 @@ function renderUsers(data, list){
     }
 )();
     function renderPosts(data, list ) {
-        list.innerHTML = null;
-
+        list.innerHTML = "";
         const fragment =document.createDocumentFragment();
 
         data.forEach(post=>{
@@ -137,7 +141,7 @@ listUsers.addEventListener("click", evt=> {
 
 })
 function renderComments( data , list){
-    list.innerHTML =null;
+    list.innerHTML = "";
     const fragment = document.createDocumentFragment();
     data.forEach(comment => {
         const clone = templateComments.cloneNode(true);
