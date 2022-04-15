@@ -145,9 +145,9 @@ function renderComments( data , list){
     const fragment = document.createDocumentFragment();
     data.forEach(comment => {
         const clone = templateComments.cloneNode(true);
-        clone.querySelector(".text__title").textContent = comment.name
-        clone.querySelector(".text__body").textContent = comment.body
-        clone.querySelector(".text__email").href = `mailto:${comment.email}`
+        clone.querySelector(".texts__title").textContent = comment.name
+        clone.querySelector(".texts__body").textContent = comment.body
+        clone.querySelector(".texts__email").href = `mailto:${comment.email}`
         fragment.appendChild(clone)
     });
     list.appendChild(fragment);

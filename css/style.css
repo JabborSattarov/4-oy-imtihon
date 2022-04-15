@@ -44,7 +44,7 @@ body {
 }
 .users__all-data {
     width: 100%;
-    height: 350px;
+    height: 400px;
     background: #00262c;
     display: flex;
     flex-wrap: wrap;
@@ -68,24 +68,32 @@ body {
     border-right: 1px solid #fff;
     border-bottom: 1px solid #fff;
     padding-top: 30px;
+
 }
 
 .company__name {
     width: 100%;
     text-align: center;
     margin: 10px;
+    font-family: 'Patua One', cursive;
+
 }
 
 .company__catchPhrase {
     width: 100%;
     padding: 5px 0px;
     font-size: 14px;
+    font-family: 'Patua One', cursive;
+    font-family: 'Patua One', cursive;
+
 }
 
 .company__bs {
     width: 100%;
     padding: 5px 0px;
     font-size: 14px;
+    font-family: 'Patua One', cursive;
+    opacity: .8;
 
 }
 
@@ -129,11 +137,15 @@ body {
     text-align: center;
     padding: 5px 0px;
     border-bottom: 1px solid #fff;
+    font-family: 'Kumar One Outline', cursive;
+
 }
 
 .data__name {
     padding: 5px 0px;
-    font-style: italic;
+    font-family: 'Patua One', cursive;
+
+    
 }
 
 .links {
@@ -142,6 +154,7 @@ body {
     justify-content: space-around;
     text-align: center;
     padding: 10px 0px;
+    font-family:'Akshar', sans-serif ;
   
 }
 
@@ -149,9 +162,11 @@ body {
     text-decoration: none;
     color: red;
     font-size: 18px;
-    font-style: italic;
+    
     margin: 5px 0px;
     transition: .5s;
+    font-family:'Akshar', sans-serif ;
+
 }
 .data__location:hover{
     transform: translateY(-10px);
@@ -163,6 +178,7 @@ body {
     font-style: italic;
     margin: 5px 0px;
     transition: .5s;
+    font-family:'Akshar', sans-serif ;
 
 }
 .data__email:hover{
@@ -176,6 +192,7 @@ body {
     font-style: italic;
     margin: 5px 0px;
     transition: .5s;
+    font-family:'Akshar', sans-serif ;
 
 }
 .data__website:hover{
@@ -188,6 +205,7 @@ body {
     font-style: italic;
     margin: 5px 0px;
     transition: .5s;
+    font-family:'Akshar', sans-serif ;
 
 }
 .data__phone:hover{
@@ -197,28 +215,33 @@ body {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    
 }
 .address__city{
     width: 100%;
     padding: 10px 0px;
     font-size: 14px;
+    font-family:'Akshar', sans-serif ;
     
 }
 .address__street{
     width: 100%;
     padding: 10px 0px;
+    font-family:'Akshar', sans-serif ;
 
     font-size: 14px;
 }
-.address__sutie{
+.address__suite{
     width: 100%;
     font-size: 14px;
     padding: 10px 0px;
+    font-family:'Akshar', sans-serif ;
 
 }
 .address__zipcode{
     width: 100%;
     padding: 10px 0px;
+    font-family:'Akshar', sans-serif ;
 
     font-size: 14px;
 
@@ -298,12 +321,17 @@ body {
 }
 .text__title{
     padding: 10px;
-    font-size: 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family:'Akshar', sans-serif ;
+
 }
 .text__body{
     padding: 10px;
-    opacity: .9;
+    opacity: .8;
     font-size: 13px;
+    font-family: 'Patua One', cursive;
+
 }
 
 .comment-col{
@@ -362,8 +390,22 @@ body {
     right: 100%;
     bottom: 0;
 }
+.texts__title{
+    color: #fff;
+    font-family:'Akshar', sans-serif ;
+    text-transform: uppercase;
+    padding: 10px 0px;
+    font-size: 16px;
 
-.text__email{
+} 
+.texts__body{
+    font-family: 'Patua One', cursive;
+    padding: 0px;    
+    font-size: 14px;
+    opacity: .8;
+
+}
+.texts__email{
     width: 50px;
     color: rgb(251, 105, 52);
     text-decoration: none;
@@ -372,6 +414,8 @@ body {
     margin: 5px 0px;
     text-align: center;
 } 
+
+
 .loader-overlay{
     display: flex;
     align-items: center;
@@ -385,7 +429,6 @@ body {
     background: rgba(0, 0, 0, 0.755);
     
     color: #fff;
-    font-family: monospace;
 }
 .ring{
     position: absolute;
